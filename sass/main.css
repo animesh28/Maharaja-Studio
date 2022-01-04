@@ -359,24 +359,20 @@ a {
   height: 100vh;
 }
 
-.carousel-item-image_1 {
-  background: url("../../assets/cover1.jpg") no-repeat;
-  background-position: 0 40%;
+.carousel-item-1 {
+  margin-top: -10rem;
 }
 
-.carousel-item-image_2 {
-  background: url("../../assets/cover2.jpg") no-repeat;
-  background-position: 0 40%;
+.carousel-item-2 {
+  margin-top: -14rem;
 }
 
-.carousel-item-image_3 {
-  background: url("../../assets/cover3.jpg") no-repeat;
-  background-position: 0 30%;
+.carousel-item-3 {
+  margin-top: -3rem;
 }
 
-.carousel-item-image_4 {
-  background: url("../../assets/cover4.jpg") no-repeat;
-  background-position: 0 40%;
+.carousel-item-4 {
+  margin-top: -10rem;
 }
 
 .carousel-item-image {
