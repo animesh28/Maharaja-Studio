@@ -79,13 +79,65 @@ a {
   font-family: 'Apercu', sans-serif;
 }
 
+.main-body {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 3rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.main-body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-body_wrap {
+  padding: 3rem;
+  background-color: #e8e8e8;
+  min-height: 100vh;
+}
+
+.main-section-heading {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.main-section-heading-small {
+  margin-top: 10rem;
+  font-size: 3rem;
+}
+
+.main-section-text {
+  font-size: 1.6rem;
+  width: 50%;
+  text-align: center;
+}
+
 .navbar {
-  padding-top: 1rem;
-  padding-right: 2rem;
+  position: fixed;
+  top: 0;
+  padding: 1rem 0 1rem 2rem;
+  width: 100%;
 }
 
 .navbar .navbar-brand {
   font-size: 2rem;
+  color: #fff;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .navbar-collapse {
@@ -104,12 +156,12 @@ a {
 }
 
 .nav-link, .nav-link:link, .nav-link:visited {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 0 15px;
   color: #fff !important;
   text-transform: uppercase;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   position: relative;
 }
 
@@ -120,6 +172,7 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  letter-spacing: 2px;
 }
 
 .nav-link:hover, .nav-link:active {
@@ -151,7 +204,7 @@ a {
 
 .nav-link_index {
   color: #8b8b8b;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-right: 10px;
 }
 
@@ -159,6 +212,8 @@ a {
   margin: 0 1.5rem;
   cursor: pointer;
   position: relative;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
 }
 
 .hamburger-animated {
@@ -169,7 +224,7 @@ a {
 }
 
 .silder-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -217,7 +272,7 @@ a {
 
 .small-divider {
   width: 50px;
-  height: 1px;
+  height: 2px;
   background-color: #fff;
   margin-right: 1.5rem;
 }
@@ -349,9 +404,13 @@ a {
   font-size: 1.5rem;
 }
 
+.slider-menu_footer-link-head {
+  font-size: 1.5rem;
+  color: #8b8b8b;
+}
+
 #carouselExampleControls {
-  position: absolute;
-  top: 0;
+  position: relative;
   z-index: -2;
 }
 

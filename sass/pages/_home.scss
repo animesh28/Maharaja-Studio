@@ -1,0 +1,40 @@
+.main {
+    &-body {
+        background-color: #fff;
+        min-height: 100vh;
+        padding: 3rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+
+        & section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_wrap {
+            padding: 3rem;
+            background-color: #e8e8e8;
+            min-height: 100vh;
+        }
+    }
+
+    &-section {
+        &-heading {
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            &-small{
+                margin-top: 10rem;
+                font-size: 3rem;
+            }
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            width: 50%;
+            text-align: center;
+        }
+    }
+}

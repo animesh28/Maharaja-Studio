@@ -1,8 +1,9 @@
 const hamburger = document.querySelector('.hamburger')
 const silder_nav = document.querySelector('.silder-nav')
 const logo = document.querySelector('.slider-menu_logo')
-
 const close = document.querySelector('.close-button')
+const cover = document.querySelector('#carouselExampleControls')
+const navbar = document.querySelector('.navbar')
 
 
 hamburger.addEventListener('click', () => {
@@ -18,3 +19,34 @@ close.addEventListener('click', () => {
     logo.style.zIndex = '-2';
     silder_nav.style.transform = 'scale(0)'
 })
+
+window.addEventListener('scroll',function(e) {
+    document.querySelector('.navbar-brand').classList.add('d-none')
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.classList.add('d-none')
+    })
+    hamburger.style.margin = '1rem 1.5rem'
+});
+
+window.onscroll = function(ev)
+{
+	var body= document.body; //IE 'quirks'
+    var doc= document.documentElement; //IE with doctype
+    doc= (doc.clientHeight)? doc: body;
+	
+	if (doc.scrollTop == 0)
+	{
+        document.querySelector('.navbar-brand').classList.remove('d-none')
+        document.querySelectorAll('.nav-link').forEach(item => {
+            item.classList.remove('d-none')
+        })
+        hamburger.style.margin = '0 1.5rem'
+	}       
+    
+    if (doc.scrollTop == window.screen.height-10) {
+        alert('test');
+    }
+
+};
+
+

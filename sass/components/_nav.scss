@@ -1,9 +1,13 @@
 .navbar {
-    padding-top: 1rem;
-    padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    padding: 1rem 0 1rem 2rem;
+    width: 100%;
 
     .navbar-brand {
         font-size: 2rem;
+        color: #fff;
+        transition: all 1s ease-in-out;
     }
 
     &-collapse {
@@ -18,17 +22,18 @@
 
 .nav {
     &-link, &-link:link, &-link:visited {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin: 0 15px;
         color: #fff !important;
         text-transform: uppercase;
-        transition: all .3s ease-in-out;
+        transition: all 1s ease-in-out;
         position: relative;
     }
     
     &-link {
         display: flex;
         align-items: baseline;   
+        letter-spacing: 2px;
     }
 
     &-link:hover, &-link:active {
@@ -55,7 +60,7 @@
 
     &-link_index {
         color: #8b8b8b;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-right: 10px;
     }
 }
@@ -64,6 +69,7 @@
     margin: 0 1.5rem;
     cursor: pointer;
     position: relative;
+    transition: all .4s ease-in;
 }
 
 .hamburger-animated {
@@ -72,7 +78,7 @@
 }
 
 .silder-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -108,7 +114,7 @@
 
 .small-divider {
     width: 50px;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
     margin-right: 1.5rem;
 }
@@ -205,6 +211,11 @@
 .silder-menu_footer-link {
     color: #fff;
     font-size: 1.5rem;
+}
+
+.slider-menu_footer-link-head {
+    font-size: 1.5rem;
+    color: #8b8b8b;
 }
 
 
