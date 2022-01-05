@@ -82,7 +82,7 @@ a {
 .main-body {
   background-color: #fff;
   min-height: 100vh;
-  padding: 3rem;
+  padding: 3rem 3rem 10rem 3rem;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 }
@@ -116,7 +116,7 @@ a {
 }
 
 .main-section-heading-small {
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 3rem;
 }
 
@@ -124,6 +124,281 @@ a {
   font-size: 1.6rem;
   width: 50%;
   text-align: center;
+}
+
+.about-company {
+  width: 100%;
+}
+
+.about-company .image_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem 0;
+  position: relative;
+  margin-top: 2rem;
+  margin-right: 5rem;
+}
+
+.about-company .image_wrap::after {
+  content: '';
+  display: block;
+  width: 62%;
+  height: 102%;
+  position: absolute;
+  top: 1rem;
+  left: 17rem;
+  border: 10px solid yellow;
+  z-index: 1;
+}
+
+.about-company .image_wrap img {
+  max-height: 70vh;
+  margin-top: 5vh;
+  position: relative;
+  z-index: 2;
+}
+
+.about-company div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.about-company .owner-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-company .owner-info > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin-left: 10rem;
+}
+
+.about-company .owner-info_hey {
+  font-size: 3.5rem;
+}
+
+.about-company .owner-info_name {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.camera-icon {
+  width: 200px;
+}
+
+.filled-button {
+  padding: 1rem 1.5rem;
+  border: 1px solid #000;
+  width: 200px;
+  text-align: center;
+  margin-top: 2rem;
+  color: #000;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  font-size: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.filled-button:hover {
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.filled-button:hover::after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.filled-button::after {
+  content: 'KNOW MORE';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border: 1px solid #fff;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-transform: translateX(-25rem);
+          transform: translateX(-25rem);
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.filled-button_gallery::after {
+  content: 'GALLERY';
+}
+
+.filled-button_portfolio::after {
+  content: 'portfolio';
+  text-transform: uppercase;
+  -webkit-transform: translateX(25rem);
+          transform: translateX(25rem);
+}
+
+.divider-img {
+  margin: 14vh 0;
+}
+
+.gallery-small {
+  width: 90%;
+}
+
+.gallery-small_head {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.gallery-small_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12)[1fr];
+      grid-template-columns: repeat(1fr, 12);
+  -ms-grid-rows: (20vh)[4];
+      grid-template-rows: repeat(4, 20vh);
+  grid-gap: .7rem;
+      grid-template-areas: "a a a a b b b b c c c c" "a a a a d d d m m m e e" "f f g g g g h h i i i i" "j j g g g g k k k k l l";
+}
+
+.gallery-small_content div {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-small_image-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: a;
+}
+
+.gallery-small_image-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: b;
+}
+
+.gallery-small_image-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: c;
+}
+
+.gallery-small_image-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: d;
+}
+
+.gallery-small_image-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: e;
+}
+
+.gallery-small_image-6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: f;
+}
+
+.gallery-small_image-7 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: g;
+}
+
+.gallery-small_image-8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: h;
+}
+
+.gallery-small_image-9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: i;
+}
+
+.gallery-small_image-10 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: j;
+}
+
+.gallery-small_image-11 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 4;
+  grid-area: k;
+}
+
+.gallery-small_image-12 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: l;
+}
+
+.gallery-small_image-13 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 3;
+  grid-area: m;
+}
+
+.gallery-small_link-wrap {
+  margin-top: 5.5rem;
 }
 
 .navbar {
@@ -383,9 +658,9 @@ a {
 }
 
 .slider-menu_logo {
-  position: relative;
+  position: fixed;
   z-index: 5;
-  margin-top: 5rem;
+  top: 10rem;
   display: none;
 }
 

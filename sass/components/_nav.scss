@@ -194,9 +194,9 @@
     }
 
     &_logo {
-        position: relative;
+        position: fixed;
         z-index: 5;
-        margin-top: 5rem;
+        top: 10rem;
         display: none;
     }
 
