@@ -1,0 +1,70 @@
+.insta-follow {
+    position: absolute;
+    width: 25vh;
+    height: 30vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    background-color: white;
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_icon {
+        font-size: 4rem;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    &_id {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 1.7rem;
+        margin-top: 1.2rem;
+        transition: all .3s ease-out;
+    }
+
+    &_id:hover {
+        color: #000;
+    }
+}
+
+.photo-collage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    &_col {
+        display: flex;
+        &-1  {
+            transform: translateY(15rem);
+            
+        } 
+        
+        &-2 {
+            
+        }
+        
+        &-3 {
+            transform: translateY(9rem);
+        }
+
+        &-4 {
+            transform: translateY(20rem);
+        }
+    }
+
+    &_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_img{
+        height: 30vh;
+        min-width: 20rem;
+        &-1{
+
+        }
+    }
+}

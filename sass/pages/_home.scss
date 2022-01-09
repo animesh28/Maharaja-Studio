@@ -155,6 +155,16 @@
     transform: translateX(25rem);
 }
 
+.filled-button_insta-follow {
+    width: 120px;
+    padding: .75rem 1rem;
+}
+
+.filled-button_insta-follow::after {
+    content: 'FOLLOW';
+    transform: translateY(20rem);
+}
+
 .divider-img {
     margin: 14vh 0;
 }

@@ -273,6 +273,17 @@ a {
           transform: translateX(25rem);
 }
 
+.filled-button_insta-follow {
+  width: 120px;
+  padding: .75rem 1rem;
+}
+
+.filled-button_insta-follow::after {
+  content: 'FOLLOW';
+  -webkit-transform: translateY(20rem);
+          transform: translateY(20rem);
+}
+
 .divider-img {
   margin: 14vh 0;
 }
@@ -713,5 +724,207 @@ a {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+}
+
+.insta-follow {
+  position: absolute;
+  width: 25vh;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  background-color: white;
+  -webkit-box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insta-follow_icon {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.insta-follow_id {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.7rem;
+  margin-top: 1.2rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.insta-follow_id:hover {
+  color: #000;
+}
+
+.photo-collage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photo-collage_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo-collage_col-1 {
+  -webkit-transform: translateY(15rem);
+          transform: translateY(15rem);
+}
+
+.photo-collage_col-3 {
+  -webkit-transform: translateY(9rem);
+          transform: translateY(9rem);
+}
+
+.photo-collage_col-4 {
+  -webkit-transform: translateY(20rem);
+          transform: translateY(20rem);
+}
+
+.photo-collage_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photo-collage_img {
+  height: 30vh;
+  min-width: 20rem;
+}
+
+.testimonials_row-2 .testimonials_col-text {
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+}
+
+.testimonials_row-3 .testimonials_col .testimonials_img {
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
+}
+
+.testimonials_row-3 .testimonials_col-text {
+  -webkit-transform: translateY(-2.3rem);
+          transform: translateY(-2.3rem);
+}
+
+.testimonials_row-4 .testimonials_col .testimonials_img {
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
+}
+
+.testimonials_row-4 .testimonials_col-text {
+  -webkit-transform: translate(-2rem, -6rem);
+          transform: translate(-2rem, -6rem);
+}
+
+.testimonials_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials_row-odd {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.testimonials_row-even {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.testimonials_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials_col-odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.testimonials_col-even {
+  -webkit-transform: translate(0, -3rem);
+          transform: translate(0, -3rem);
+}
+
+.testimonials_col-text {
+  max-width: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0 1rem 1rem;
+  text-align: justify;
+}
+
+.testimonials_col-text-odd {
+  margin-left: 1.5rem;
+}
+
+.testimonials_img {
+  max-height: 40vh;
+  width: 40rem;
+}
+
+.testimonials_name {
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.testimonials_name::after {
+  content: '';
+  position: absolute;
+  top: 105%;
+  left: 0%;
+  height: 2.5px;
+  width: 25%;
+  background-color: #000;
+}
+
+.testimonials_text {
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

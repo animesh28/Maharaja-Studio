@@ -1,0 +1,93 @@
+.testimonials {
+
+    &_row-2 &_col-text {
+        transform: translateX(-2rem);
+    }
+    
+    &_row-3 &_col &_img {
+        transform: translateY(-6rem);
+    }
+
+    &_row-3 &_col-text {
+        transform: translateY(-2.3rem);
+    }
+
+    &_row-4 &_col &_img {
+        transform: translateY(-6rem);
+    }
+
+    &_row-4 &_col-text {
+        transform: translate(-2rem, -6rem);
+    }
+
+    &_row {
+        display: flex;
+        justify-content: center;
+
+        &-odd {
+            align-items: flex-start;
+        }
+
+        &-even {
+            align-items: flex-start;
+        }
+    }
+
+    &_col {
+        display: flex;
+        flex: 0.5;
+        flex-direction: column;
+        
+        //images
+        &-odd {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &-even {
+            transform: translate(0,-3rem);
+        }
+
+        //text
+        &-text {
+            max-width: 350px;
+            justify-content: center;
+            padding: 1rem 0 1rem 1rem;
+            text-align: justify;
+
+            &-odd {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    &_img {
+        max-height: 40vh;
+        width: 40rem;
+    }
+    
+    &_name {
+        font-size: 2.5rem;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    &_name::after {
+        content: '';
+        position: absolute;
+        top: 105%;
+        left: 0%;
+        height: 2.5px;
+        width: 25%;
+        background-color: #000;
+    }
+
+    &_designation {
+
+    }
+
+    &_text {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+}
