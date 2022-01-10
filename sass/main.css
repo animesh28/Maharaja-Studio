@@ -68,11 +68,14 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: grey;
 }
 
 a {
   text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 * {
@@ -926,5 +929,9 @@ a {
 .testimonials_text {
   font-size: 1.6rem;
   margin-top: 2rem;
+}
+
+.footer {
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,9 +22,12 @@ html{
 }
 body{
     box-sizing: border-box;
-    background: grey;
 }
 
 a{
     text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
 }
