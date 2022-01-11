@@ -2,22 +2,47 @@
 
     &_row-2 &_col-text {
         transform: translateX(-2rem);
+        @media screen and (max-width: 786px){
+            & {
+                transform: translate(0,0);
+            }
+        }
     }
     
     &_row-3 &_col &_img {
         transform: translateY(-6rem);
+        @media screen and (max-width: 786px){
+            & {
+                transform: translate(0,0);
+            }
+        }
     }
 
     &_row-3 &_col-text {
         transform: translateY(-2.3rem);
+        @media screen and (max-width: 786px){
+            & {
+                transform: translate(0,0);
+            }
+        }
     }
 
     &_row-4 &_col &_img {
         transform: translateY(-6rem);
+        @media screen and (max-width: 786px){
+            & {
+                transform: translate(0,0);
+            }
+        }
     }
 
     &_row-4 &_col-text {
         transform: translate(-2rem, -6rem);
+        @media screen and (max-width: 786px){
+            & {
+                transform: translate(0,0);
+            }
+        }
     }
 
     &_row {
@@ -56,6 +81,11 @@
 
         &-even {
             transform: translate(0,-3rem);
+            @media screen and (max-width: 786px){
+                & {
+                    transform: translate(0,0);
+                }
+            }
         }
 
         //text
@@ -74,6 +104,11 @@
     &_img {
         max-height: 40vh;
         width: 40rem;
+        @media screen and (max-width: 786px){
+            & {
+                max-width: 100%;
+            }
+        }
     }
     
     &_name {
