@@ -442,7 +442,7 @@ ul, ol {
 
 @media screen and (max-width: 786px) {
   .navbar {
-    width: auto;
+    width: 100vw;
   }
 }
 
@@ -540,7 +540,7 @@ ul, ol {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #000;
   z-index: -2;
@@ -588,6 +588,10 @@ ul, ol {
   height: 2px;
   background-color: #fff;
   margin-right: 1.5rem;
+}
+
+.slider-nav, .slider-nav_container {
+  width: 100vw !important;
 }
 
 .slider-menu {

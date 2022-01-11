@@ -6,7 +6,7 @@
 
     @media screen and (max-width: 786px){
         & {
-            width: auto;
+            width: 100vw;
         }
     }
 
@@ -87,7 +87,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #000;
     z-index: -2;
@@ -123,6 +123,10 @@
     height: 2px;
     background-color: #fff;
     margin-right: 1.5rem;
+}
+
+.slider-nav,.slider-nav_container {
+    width: 100vw !important;
 }
 
 .slider-menu {
