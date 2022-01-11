@@ -40,6 +40,14 @@ ul,ol {
     }
 }
 
+@media screen and (min-width: 787px) {
+    .hide-pc {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}
+
 html,body{
     overflow-x: hidden;
 }

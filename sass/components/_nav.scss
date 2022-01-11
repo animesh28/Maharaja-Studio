@@ -8,6 +8,14 @@
         & {
             width: 100vw;
         }
+
+        &_container-fluid {
+            margin-left: .5rem;
+        }
+    }
+
+    &-light &-toggler {
+        border: none;
     }
 
     .navbar-brand {
@@ -137,6 +145,12 @@
     padding-top: 17rem;
     transform: translateX(2rem);
 
+    @media screen and (max-width: 786px) {
+        & {
+            width: auto;
+        }
+    }
+
     &_social-icon {
         color: #fff;
         font-size: 2rem;
@@ -153,6 +167,13 @@
             flex: 1;
         }
 
+        @media screen and (max-width: 786px) {
+            & {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
     }
 
 
@@ -164,6 +185,12 @@
 
     &_col-1{
         align-items: flex-start;
+
+        @media screen and (max-width: 786px) {
+            & {
+                width: 100%;
+            }
+        }
     }
 
     &_col-2 {
@@ -215,6 +242,14 @@
         padding-top: 10rem;
         position: relative;
         z-index: 5;
+
+        @media screen and (max-width: 786px) {
+            & {
+                width: 80vw;
+                text-align: center;
+                transform: translateY(-4rem);
+            }
+        }
     }
 }
 
