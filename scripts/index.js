@@ -4,6 +4,8 @@ const logo = document.querySelector('.slider-menu_logo')
 const close = document.querySelector('.close-button')
 const cover = document.querySelector('#carouselExampleControls')
 const navbar = document.querySelector('.navbar')
+const mobileHamburger = document.querySelector('.navbar-toggler-icon')
+const navbarCollapse = document.querySelector('.navbar-collapse')
 
 
 hamburger.addEventListener('click', () => {
@@ -11,6 +13,17 @@ hamburger.addEventListener('click', () => {
     logo.style.display = 'flex';
     logo.style.zIndex = '6';
     silder_nav.style.transform = 'scale(1)'
+})
+
+mobileHamburger.addEventListener('click', () => {
+    silder_nav.style.zIndex = '5';
+    logo.style.display = 'flex';
+    logo.style.zIndex = '6';
+    silder_nav.style.transform = 'scale(1)'
+    setTimeout(function(){
+        navbarCollapse.classList.remove('show')
+   }, 1000);
+    
 })
 
 close.addEventListener('click', () => {

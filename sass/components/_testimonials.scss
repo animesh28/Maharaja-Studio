@@ -31,6 +31,16 @@
         &-even {
             align-items: flex-start;
         }
+
+        @media screen and (max-width: 786px){
+            &-odd {
+                flex-direction: column;
+            }
+
+            &-even {
+                flex-direction: column-reverse;
+            }
+        }
     }
 
     &_col {

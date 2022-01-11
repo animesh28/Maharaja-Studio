@@ -7,6 +7,12 @@
     &-inner {
         height: 100vh;
     }
+
+    @media screen and (max-width: 786px){
+        &-inner {
+            height: auto;
+        }
+    }
 } 
 
 .carousel-item-1 {

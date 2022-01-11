@@ -31,3 +31,11 @@ a{
 ul,ol {
     list-style: none;
 }
+
+@media screen and (max-width: 786px) {
+    .hide-mobile {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}

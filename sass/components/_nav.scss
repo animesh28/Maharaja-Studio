@@ -4,6 +4,12 @@
     padding: 1rem 0 1rem 2rem;
     width: 100%;
 
+    @media screen and (max-width: 786px){
+        & {
+            width: auto;
+        }
+    }
+
     .navbar-brand {
         font-size: 2rem;
         color: #fff;

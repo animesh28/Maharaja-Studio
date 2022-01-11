@@ -78,6 +78,14 @@ ul, ol {
   list-style: none;
 }
 
+@media screen and (max-width: 786px) {
+  .hide-mobile {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
 * {
   font-family: 'Apercu', sans-serif;
 }
@@ -133,6 +141,15 @@ ul, ol {
   width: 100%;
 }
 
+@media screen and (max-width: 786px) {
+  .about-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about-company .image_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +183,7 @@ ul, ol {
   margin-top: 5vh;
   position: relative;
   z-index: 2;
+  max-width: 90%;
 }
 
 .about-company div {
@@ -420,6 +438,12 @@ ul, ol {
   top: 0;
   padding: 1rem 0 1rem 2rem;
   width: 100%;
+}
+
+@media screen and (max-width: 786px) {
+  .navbar {
+    width: auto;
+  }
 }
 
 .navbar .navbar-brand {
@@ -707,6 +731,12 @@ ul, ol {
   height: 100vh;
 }
 
+@media screen and (max-width: 786px) {
+  .carousel-inner {
+    height: auto;
+  }
+}
+
 .carousel-item-1 {
   margin-top: -10rem;
 }
@@ -781,6 +811,15 @@ ul, ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 786px) {
+  .photo-collage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .photo-collage_col {
@@ -863,6 +902,21 @@ ul, ol {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media screen and (max-width: 786px) {
+  .testimonials_row-odd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials_row-even {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .testimonials_col {
