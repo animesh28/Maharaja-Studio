@@ -17,18 +17,38 @@
 
 .carousel-item-1 {
     margin-top: -10rem;
+    @media screen and (max-width: 786px) {
+        & {
+            margin-top: 0;
+        }
+    }
 }
 
 .carousel-item-2 {
     margin-top: -14rem;
+    @media screen and (max-width: 786px) {
+        & {
+            margin-top: 0;
+        }
+    }
 }
 
 .carousel-item-3 {
     margin-top: -3rem;
+    @media screen and (max-width: 786px) {
+        & {
+            margin-top: 0;
+        }
+    }
 }
 
 .carousel-item-4 {
     margin-top: -10rem;
+    @media screen and (max-width: 786px) {
+        & {
+            margin-top: 0;
+        }
+    }
 }
 
 .carousel-item-image {
