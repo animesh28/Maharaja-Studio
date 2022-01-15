@@ -28,18 +28,29 @@
 
     &_img-wrap {
         display: flex;
-        flex: .5;
-        background: url('../assets/gallery/2.jpg');
-        background-size: cover;
-        background-position-x: right;
+        flex: .55;
         width: 100%;
         height: 100%;
         position: relative;
+        background-color: $color-primary-red;
+
+        &-about {
+            background: url('../assets/gallery/2.jpg');
+            background-size: cover;
+            background-position-x: right;
+        }
 
         &-service  {
             background: url('../assets/gallery/18.jpg');
             background-size: cover;
             background-position-x: right;
+        }
+
+        &-gallery {
+            background: url('../assets/gallery/13.jpg');
+            background-size: cover;
+            background-position-x: right;
+            flex: .535;
         }
 
         @include respond(tab-port){
@@ -83,7 +94,7 @@
         }
 
         & em {
-            color: #e31d3b;
+            color: $color-primary-red;
             font-size: 4rem;
             font-weight: 700;
             margin: 0 1.5rem;
@@ -113,13 +124,13 @@
 
     &_tabs {
         display: flex;
-        flex: .5;
+        flex: .55;
     }
 
     &_quote {
         display: flex;
         flex: .4;
-        background-color: #e31d3b;
+        background-color: $color-primary-red;
         padding: 5rem;
         flex-direction: column;
         justify-content: center;

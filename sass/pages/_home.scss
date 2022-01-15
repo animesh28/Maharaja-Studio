@@ -1,0 +1,275 @@
+.service {
+    &_wrap {
+        padding: 8rem;
+    }
+
+    &_item {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 102%;
+            left: 8px;
+            width: 10%;
+            height: 3px;
+            background-color: $color-primary-red;
+        }
+
+        &-heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            & em {
+                color: $color-primary-red;
+                text-decoration: none;
+            }
+        }
+
+        &-img {
+            height: 30vh;
+            width: 100%;
+            background: url('../assets/gallery/7.JPG');
+            background-size: cover;
+            background-position-y: 80%;
+            margin: 2rem 0;
+        }
+
+        &-text {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.home-gallery {
+    $c: &; 
+
+    &_img-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        filter: grayscale(0%) !important;
+        transform: scale(0);
+        opacity: 0;
+        transition: all .3s ease-in;
+
+        & h2 {
+            font-weight: 600;
+        }
+
+        & span {
+            position: relative;
+            font-size: 1.5rem;
+            margin: 2rem 0 0 0;
+        }
+
+        & span::after {
+            content: '';
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            height: 3px;
+            width: 2rem;
+            background-color: $color-primary-red;
+        }
+    }
+
+    &_col {
+        cursor: pointer;
+        transition: all .4s ease-in;
+    }
+
+    &_col:hover #{$c}_img-caption {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &_row {
+        min-height: 50vh;
+
+        &-1 {
+            
+            & #{$c}_img-1 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/20.jpg');
+                    background-size: cover;
+                    background-position-x: 20%;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+            & #{$c}_img-2 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/11.jpg');
+                    background-size: cover;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+                
+            }
+
+            & #{$c}_img-3 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/16.jpg');
+                    background-size: cover;
+                    background-position-x: right;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+            & #{$c}_img-4 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/10.jpg');
+                    background-size: cover;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+        }
+
+        &-2 {
+
+            & #{$c}_img-1 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/22.jpg');
+                    background-size: cover;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+            & #{$c}_img-2 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/21.jpg');
+                    background-size: cover;
+                    background-position-x: center;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+            & #{$c}_img-3 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/3.jpg');
+                    background-size: cover;
+                    background-position-x: right;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+            & #{$c}_img-4 {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../assets/gallery/23.jpg');
+                    background-size: cover;
+                    transition: all .4s ease-in;
+                }
+
+                &:hover::before {
+                    filter: grayscale(100%);
+                }
+            }
+
+        }
+    }
+
+
+}
