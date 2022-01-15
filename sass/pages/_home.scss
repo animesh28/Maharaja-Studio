@@ -6,6 +6,12 @@
     &_item {
         position: relative;
 
+        @media screen and (max-width:998px){
+            &:not(:last-of-type) {
+                margin-bottom: 4rem;
+            }
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -61,7 +67,7 @@
         filter: grayscale(0%) !important;
         transform: scale(0);
         opacity: 0;
-        transition: all .3s ease-in;
+        transition: all .3s ease;
 
         & h2 {
             font-weight: 600;
@@ -87,6 +93,12 @@
     &_col {
         cursor: pointer;
         transition: all .4s ease-in;
+
+        @media screen and (max-width: 990px) {
+            & {
+                height: 70vh;
+            }
+        }
     }
 
     &_col:hover #{$c}_img-caption {
@@ -272,4 +284,90 @@
     }
 
 
+}
+
+.one-liner {
+    &_row {
+        min-height: 50vh;
+    }
+
+    &_col {
+
+        @media screen and (max-width:1000px) {
+            &-wrap {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+
+                &-reverse {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+        &-img {
+
+            &-1 {
+                background: url('../assets/gallery/4.jpg');
+                background-size: cover;
+                background-position-x: center;
+            }
+
+            &-2 {
+                background: url('../assets/gallery/15.jpg');
+                background-size: cover;
+                background-position-x: center;
+            }
+
+            &-3 {
+                background: url('../assets/gallery/18.jpg');
+                background-size: cover;
+                background-position-x: right;
+            }
+
+            &-4 {
+                background: url('../assets/gallery/20.jpg');
+                background-size: cover;
+                background-position-x: 30%;            }
+
+        }
+
+        &-text {
+            position: relative;
+            transition: transform .4s ease-in-out;
+        }
+
+    }
+
+    &_caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 0 2rem;
+
+        & h2 {
+            font-weight: 600;
+        }
+
+        & span {
+            position: relative;
+            font-size: 1.5rem;
+            margin: 2rem 0 0 0;
+        }
+
+        & span.after {
+            height: 3px;
+            width: 2rem;
+            background-color: $color-primary-red;
+        }
+    }
 }

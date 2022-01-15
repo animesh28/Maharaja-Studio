@@ -53,6 +53,18 @@
             flex: .535;
         }
 
+        &-testimonials  {
+            background: url('../assets/gallery/1.jpg');
+            background-size: cover;
+            flex: .535;
+        }
+
+        &-contact {
+            background: url('../assets/gallery/8.jpg');
+            background-size: cover;
+            flex: .535;
+        }
+
         @include respond(tab-port){
             height: 60vh;
             flex: auto;
@@ -125,6 +137,69 @@
     &_tabs {
         display: flex;
         flex: .55;
+    }
+
+    &_testimonials {
+        display: flex;
+        flex: .5;
+        background-color: #f7f7f7;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5rem;
+
+        @media screen and (max-width:990px) {
+            & {
+                padding: 5rem 5rem 0 5rem;
+            }
+        }
+
+        &-item {
+            display: flex;
+            height: 50%;
+            align-items: center;
+            padding-top: 4rem;    
+        
+        @media screen and (max-width:990px) {
+            & {
+            padding: 5rem 0;
+            }
+        }
+
+            & img {
+                width: 100px;
+                height: 100px;        
+            }
+
+            &_text {
+                position: relative;
+                padding: 0 4rem;
+                & svg {
+                    width: 5rem;
+                    height: 5rem;
+                    position: absolute;
+                    top: -8rem;
+
+                    & path {
+                        fill: $color-primary-red;
+                    }
+                }
+
+                & p {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+
+                & h4 {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+
+                & span {
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 
     &_quote {

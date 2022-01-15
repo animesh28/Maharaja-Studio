@@ -53,7 +53,6 @@ window.onscroll = function(ev)
         document.querySelectorAll('.nav-link').forEach(item => {
             item.classList.remove('d-none')
         })
-        hamburger.style.margin = '0 1.5rem'
 	}       
     
     if (doc.scrollTop == window.screen.height-10) {
@@ -61,5 +60,4 @@ window.onscroll = function(ev)
     }
 
 };
-
 
