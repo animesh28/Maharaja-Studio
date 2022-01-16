@@ -90,11 +90,99 @@
         </div>
       </nav>
 
-      <div class="about_wrap">
-          <div class="about_fixed-left">
-              <!-- background image -->
+      <div class="about-page">
+        <div class="container">
+          <div class="about-page_img">
+            
           </div>
-          <div class="about_content-right">
-            <h1 class="about_head">About Us</h1>
+          <div class="about-page_intro">
+            <span class="about-page_intro-topic">
+              About
+            </span>
+            <h1 class="about-page_intro-head">
+              I’m Pratik Gupta, A Professional Photographer Living In India.
+            </h1>
+            <div class="div about-page_intro-text-wrap">
+              <div class="about-page_intro-text-col">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="about-page_intro-text-col">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis.
+              </div>
+            </div>
           </div>
+        </div>
       </div>
+
+      <div class="about-page p-0">
+        <div class="container">
+          <div class="about-page_intro">
+            <span class="about-page_intro-topic">
+              PROJECTS
+            </span>
+            <h1 class="about-page_intro-head">
+              A Good Ending Is The Most Important
+            </h1>
+            <div class="div about-page_intro-text-wrap">
+              <div class="about-page_intro-text-col">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="about-page_intro-text-col">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis.
+              </div>
+            </div>
+          </div>
+
+          <div class="about-page_gallery">
+            <div class="about-page_gallery-item about-page_gallery-item-1">
+
+            </div>
+            <div class="about-page_gallery-item about-page_gallery-item-2">
+
+            </div>
+            <div class="about-page_gallery-item about-page_gallery-item-3">
+
+            </div>
+            <div class="about-page_gallery-item about-page_gallery-item-4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="./scripts/index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          var $win = $(window);
+          var winH = $win.height();   // Get the window height.
+
+          $win.on("scroll", function () {
+              if ($(this).scrollTop() > winH ) {
+                $(".hamburger").attr("src","./assets/hamburger-black.png");
+              }
+              else if($(this).scrollTop() > winH-25){
+                $(".hamburger").attr("src","./assets/hamburger-black.png");
+              } 
+              else if($(this).scrollTop() > winH-50){
+                $(".hamburger").attr("src","./assets/hamburger-black.png");
+              } 
+              else if($(this).scrollTop() > winH-75){
+                $(".hamburger").attr("src","./assets/hamburger-black.png");
+              } 
+              else {
+                $(".hamburger").attr("src","./assets/hamburger.png");
+              }
+          }).on("resize", function(){ // If the user resizes the window
+            winH = $(this).height(); // you'll need the new height value
+          });
+
+          const changeSource = () => {
+            document.querySelector('.hamburger').src="./assets/hamburger.png";
+          }
+        })
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      </body>
+      </html>
