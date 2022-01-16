@@ -1386,6 +1386,8 @@ textarea.feedback-input {
   height: 40rem;
   background: url("../assets/about1.jpg");
   background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .about-page_gallery-item-2 {
@@ -1396,6 +1398,7 @@ textarea.feedback-input {
   position: absolute;
   top: 4%;
   left: 48%;
+  z-index: 3;
 }
 
 .about-page_gallery-item-3 {
@@ -1406,6 +1409,7 @@ textarea.feedback-input {
   position: absolute;
   top: 77%;
   left: 44%;
+  z-index: 1;
 }
 
 .about-page_gallery-item-4 {
@@ -1416,6 +1420,7 @@ textarea.feedback-input {
   position: absolute;
   top: 115%;
   left: 10%;
+  z-index: 0;
 }
 
 .about-page_intro {

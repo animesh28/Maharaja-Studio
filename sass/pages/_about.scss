@@ -51,6 +51,8 @@
                     height: 40rem;
                     background: url('../assets/about1.jpg');
                     background-size: cover;
+                    position: relative;
+                    z-index: 2;
                 }
 
                 &-2 {
@@ -61,6 +63,7 @@
                     position: absolute;
                     top: 4%;
                     left: 48%;
+                    z-index: 3;
                 }
 
                 &-3 {
@@ -71,6 +74,7 @@
                     position: absolute;
                     top: 77%;
                     left: 44%;
+                    z-index: 1;
                 }
 
                 &-4 {
@@ -81,6 +85,7 @@
                     position: absolute;
                     top: 115%;
                     left: 10%;
+                    z-index: 0;
                 }
             }
         }
