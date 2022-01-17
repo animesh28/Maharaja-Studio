@@ -1485,4 +1485,55 @@ textarea.feedback-input {
   line-height: 3rem;
   color: #333;
 }
+
+.about-page_quote {
+  margin-top: 5vh;
+  text-align: center;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.about-page_quote-main {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.about-page_quote-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.about-page_quote-author img {
+  border-radius: 50%;
+  border: 2px solid #e31d3b;
+  margin-right: 1rem;
+}
+
+.about-page_quote-author-text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.about-page_quote-author-text span {
+  color: #999999;
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=main.css.map */
