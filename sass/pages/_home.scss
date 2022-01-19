@@ -385,6 +385,9 @@
         flex-direction: column;
         justify-content: center;
 
+        @media screen and (max-width: 900px){
+            margin-top: 5vh;
+        }
     }
 
     &_item {
