@@ -25,6 +25,10 @@
             min-height: 92vh;
             align-items: center;
             justify-content: center;
+
+            @include respond(tab-port){
+               flex-direction: column;
+             }
         }
 
         &_img {
@@ -33,6 +37,13 @@
             background: url('../assets/pratik.jpg');
             background-size: cover;
             height: 82.2vh;
+
+            @include respond(tab-port){
+                flex: none;
+                width: 100vw;
+             }
+
+             
         }    
 
         &_gallery {
@@ -41,6 +52,12 @@
             flex-direction: column;
             position: relative;
             margin-top: -24rem;
+
+            @include respond(tab-port){
+               margin: 0;
+               margin-bottom: 33vh;
+               margin-right: 14vw;
+            }
 
             &-item {
                 border-radius: 2rem;
@@ -156,6 +173,13 @@
                 font-size: 6rem;
                 font-weight: 400;
                 line-height: 1.5em;
+
+                @media screen and (max-width:900px) {
+                    & {
+                        font-size: 4rem;
+                        padding: 4rem;
+                    }
+                }
             }
 
             &-author {
@@ -203,6 +227,15 @@
                 font-size: 4.5rem;
                 font-weight: 700;
                 margin-top: 2rem;
+
+                @include respond(tab-port) {
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 4vh;
+                    }
+                }
             }
 
             &-bottom {

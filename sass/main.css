@@ -113,6 +113,7 @@ body {
 @media screen and (max-width: 786px) {
   .navbar {
     width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
   }
   .navbar_container-fluid {
     margin-left: .5rem;
@@ -120,7 +121,10 @@ body {
 }
 
 .navbar-light .navbar-toggler {
-  border: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
+  border-radius: 1.7rem;
+  margin-left: auto;
 }
 
 .navbar .navbar-brand {
@@ -470,6 +474,17 @@ body {
   .carousel-item-1 {
     margin-top: 0;
   }
+  .carousel-item-1_wrap {
+    height: 40vh;
+    background: url("../../assets/cover1.jpg");
+    background-size: cover;
+    background-position-x: right;
+  }
+  .carousel-item-1_wrap img {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .carousel-item-2 {
@@ -479,6 +494,17 @@ body {
 @media screen and (max-width: 786px) {
   .carousel-item-2 {
     margin-top: 0;
+  }
+  .carousel-item-2_wrap {
+    height: 40vh;
+    background: url("../../assets/cover2.jpg");
+    background-size: cover;
+    background-position-x: center;
+  }
+  .carousel-item-2_wrap img {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
@@ -490,6 +516,17 @@ body {
   .carousel-item-3 {
     margin-top: 0;
   }
+  .carousel-item-3_wrap {
+    height: 40vh;
+    background: url("../../assets/cover3.jpg");
+    background-size: cover;
+    background-position-x: center;
+  }
+  .carousel-item-3_wrap img {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .carousel-item-4 {
@@ -499,6 +536,17 @@ body {
 @media screen and (max-width: 786px) {
   .carousel-item-4 {
     margin-top: 0;
+  }
+  .carousel-item-4_wrap {
+    height: 40vh;
+    background: url("../../assets/cover4.jpg");
+    background-size: cover;
+    background-position-x: center;
+  }
+  .carousel-item-4_wrap img {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
@@ -1022,6 +1070,7 @@ body {
   background-size: cover;
   -webkit-transition: all .4s ease-in;
   transition: all .4s ease-in;
+  background-position-x: center;
 }
 
 .home-gallery_row-1 .home-gallery_img-4:hover::before {
@@ -1090,6 +1139,12 @@ body {
   background-position-x: right;
   -webkit-transition: all .4s ease-in;
   transition: all .4s ease-in;
+}
+
+@media screen and (max-width: 786px) {
+  .home-gallery_row-2 .home-gallery_img-3::before {
+    background-position-x: 63rem;
+  }
 }
 
 .home-gallery_row-2 .home-gallery_img-3:hover::before {
@@ -1349,6 +1404,15 @@ textarea.feedback-input {
           justify-content: center;
 }
 
+@media (max-width: 56.25em) {
+  .about-page .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about-page_img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1359,6 +1423,15 @@ textarea.feedback-input {
   background: url("../assets/pratik.jpg");
   background-size: cover;
   height: 82.2vh;
+}
+
+@media (max-width: 56.25em) {
+  .about-page_img {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100vw;
+  }
 }
 
 .about-page_gallery {
@@ -1374,6 +1447,14 @@ textarea.feedback-input {
           flex-direction: column;
   position: relative;
   margin-top: -24rem;
+}
+
+@media (max-width: 56.25em) {
+  .about-page_gallery {
+    margin: 0;
+    margin-bottom: 33vh;
+    margin-right: 14vw;
+  }
 }
 
 .about-page_gallery-item {
@@ -1514,6 +1595,13 @@ textarea.feedback-input {
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 900px) {
+  .about-page_quote-main {
+    font-size: 4rem;
+    padding: 4rem;
+  }
+}
+
 .about-page_quote-author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1567,6 +1655,22 @@ textarea.feedback-input {
   font-size: 4.5rem;
   font-weight: 700;
   margin-top: 2rem;
+}
+
+@media (max-width: 56.25em) {
+  .about-page_footer h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 4vh;
+  }
 }
 
 .about-page_footer-bottom {

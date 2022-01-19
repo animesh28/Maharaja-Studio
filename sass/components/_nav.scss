@@ -7,6 +7,7 @@
     @media screen and (max-width: 786px){
         & {
             width: 100vw;
+            background: rgba(0,0,0,.6);
         }
 
         &_container-fluid {
@@ -15,7 +16,10 @@
     }
 
     &-light &-toggler {
-        border: none;
+        border-color: rgba(255,255,255,.4);
+        background-color: #fff;
+        border-radius: 1.7rem;
+        margin-left: auto;
     }
 
     .navbar-brand {
