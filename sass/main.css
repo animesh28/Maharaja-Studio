@@ -1111,25 +1111,13 @@ h1 {
   font-size: 2.4em;
 }
 
-.container {
-  margin: 1vh auto;
-  max-width: 90%;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 5px;
-  -ms-grid-columns: rep eat(auto-fill, minmax(250px, 1fr));
-      grid-template-columns: rep eat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 250px;
-  grid-auto-flow: dense;
-}
+
 
 .container div {
   text-align: center;
-  padding: 10px;
-  color: white;
-  font-size: 3rem;
+  color: #000;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1893,7 +1881,6 @@ textarea.feedback-input {
 
 .about-page_gallery-item {
   border-radius: 2rem;
-  overflow: hidden;
 }
 
 .about-page_gallery-item-1 {
